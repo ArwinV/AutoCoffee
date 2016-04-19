@@ -1,3 +1,7 @@
+-- Wifi
+local SSID = XXXXXXXXX
+local PASS = XXXXXXXX
+
 -- Initialise variables
 local buttonOnOffPin = 1 --> GPIO5
 local buttonReadyPin = 2 --> GPIO4
@@ -71,7 +75,7 @@ gpio.trig(buttonCoffee, 'up', coffee)
 
 --Initialise wifi
 wifi.setmode(wifi.STATION)
-wifi.sta.config("H368N4F5069","C67577CAFFFE")
+wifi.sta.config("SSID","PASS")
 wifi.sta.connect()
 
 -- Create server
