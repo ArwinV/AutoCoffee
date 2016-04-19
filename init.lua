@@ -62,7 +62,7 @@ function autoCoffee()
      end
 end
 
--- Initilise GPIO pins
+-- Initialise GPIO pins
 gpio.mode(buttonOnOffPin, gpio.INT)
 gpio.mode(buttonReadyPin, gpio.INT)
 gpio.mode(buttonCoffee, gpio.INT)
